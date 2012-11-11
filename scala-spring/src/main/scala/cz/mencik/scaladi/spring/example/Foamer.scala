@@ -1,4 +1,4 @@
-package cz.mencik.scaladi.spring.example.foam
+package cz.mencik.scaladi.spring.example
 
 trait Foamer {
 
@@ -11,6 +11,5 @@ object FoamQuality extends Enumeration {
   val Average = Value("Average")
   val Excellent = Value("Excellent")
 }
-
 import FoamQuality._
 case class Foam(quality: FoamQuality)

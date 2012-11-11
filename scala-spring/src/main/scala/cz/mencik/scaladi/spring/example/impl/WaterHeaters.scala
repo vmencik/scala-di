@@ -1,7 +1,7 @@
 package cz.mencik.scaladi.spring.example.impl
 
-import cz.mencik.scaladi.spring.example.water.WaterHeater
-import cz.mencik.scaladi.spring.example.water.HotWater
+import cz.mencik.scaladi.spring.example.WaterHeater
+import cz.mencik.scaladi.spring.example.HotWater
 import cz.mencik.scaladi.spring.Standard
 import org.springframework.stereotype.Component
 import cz.mencik.scaladi.spring.Deluxe

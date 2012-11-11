@@ -1,7 +1,7 @@
 package cz.mencik.scaladi.spring.example
 
-import grinder.GrindFineness._
-import foam.FoamQuality._
+import GrindFineness._
+import FoamQuality._
 
 trait Coffee {
 

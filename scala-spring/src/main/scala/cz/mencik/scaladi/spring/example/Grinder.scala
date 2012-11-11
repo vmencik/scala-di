@@ -1,4 +1,4 @@
-package cz.mencik.scaladi.spring.example.grinder
+package cz.mencik.scaladi.spring.example
 
 trait Grinder {
 
@@ -11,6 +11,5 @@ object GrindFineness extends Enumeration {
   val Coarse = Value("Coarse")
   val Fine = Value("Fine")
 }
-
 import GrindFineness._
 case class GroundBeans(fineness: GrindFineness)

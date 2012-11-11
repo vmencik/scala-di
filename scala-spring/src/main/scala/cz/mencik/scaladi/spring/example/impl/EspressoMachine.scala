@@ -1,11 +1,8 @@
 package cz.mencik.scaladi.spring.example.impl
 
-import cz.mencik.scaladi.spring.example.water.WaterHeater
-import cz.mencik.scaladi.spring.example.grinder.Grinder
-import cz.mencik.scaladi.spring.example.foam.Foamer
-import cz.mencik.scaladi.spring.example.Coffee
-import cz.mencik.scaladi.spring.example.grinder.GrindFineness._
-import cz.mencik.scaladi.spring.example.foam.FoamQuality._
+import cz.mencik.scaladi.spring.example._
+import cz.mencik.scaladi.spring.example.GrindFineness._
+import cz.mencik.scaladi.spring.example.FoamQuality._
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 import cz.mencik.scaladi.spring.Deluxe

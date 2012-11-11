@@ -1,4 +1,4 @@
-package cz.mencik.scaladi.spring.example.water
+package cz.mencik.scaladi.spring.example
 
 trait WaterHeater {
 

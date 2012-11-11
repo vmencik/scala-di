@@ -1,7 +1,7 @@
 package cz.mencik.scaladi.spring.example.impl
 
-import cz.mencik.scaladi.spring.example.foam._
-import cz.mencik.scaladi.spring.example.foam.FoamQuality._
+import cz.mencik.scaladi.spring.example._
+import cz.mencik.scaladi.spring.example.FoamQuality._
 import cz.mencik.scaladi.spring.Standard
 import org.springframework.stereotype.Component
 import cz.mencik.scaladi.spring.Deluxe
