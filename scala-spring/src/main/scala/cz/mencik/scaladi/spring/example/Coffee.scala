@@ -12,3 +12,7 @@ trait Coffee {
   def foamQuality: FoamQuality
 
 }
+
+trait CoffeeMaker {
+  def makeCoffee: Coffee
+}
