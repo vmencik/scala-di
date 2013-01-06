@@ -8,18 +8,16 @@ import com.escalatesoft.subcut.inject.{Injectable, BindingModule, NewBindingModu
 class EspressoMachine(implicit val bindingModule: BindingModule) extends Injectable {
 
   private case class Espresso(timeSpentHeating: Int, grindFineness: GrindFineness, foamQuality: FoamQuality) extends Coffee
-  
+
   val heater = injectOptional[WaterHeater] getOrElse {
     new FastWaterHeater
   }
 
-  val grinder = injectOptional[Grinder] getOrElse {
+  val grinder = injectIfBound[Grinder] {
     new RoughGrinder
   }
 
-  val foamer = injectOptional[Foamer] getOrElse {
-    new ManualFoamer
-  }
+  val foamer = inject[Foamer]
 
   def makeCoffee: Coffee = {
     val water = heater.heatWater
