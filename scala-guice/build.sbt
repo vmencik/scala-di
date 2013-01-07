@@ -7,5 +7,5 @@ scalaVersion := "2.9.2"
 libraryDependencies ++= Seq (
 	"com.google.inject" % "guice" % "3.0",
 	"net.codingwell" %% "scala-guice" % "3.0.1",
-	"org.scalatest" %% "scalatest" % "1.8" % "test"
+	"org.scalatest" %% "scalatest" % "2.0.M5" % "test"
 )
