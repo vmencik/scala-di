@@ -9,6 +9,6 @@ trait Coffee {
 
   def grindFineness: GrindFineness
 
-  def foamQuality: FoamQuality
+  def foamQuality: Option[FoamQuality]
 
 }
