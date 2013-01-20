@@ -10,7 +10,7 @@ object App {
     val superMachine = new EspressoMachine
     println(superMachine.makeCoffee)
 
-    val cheapMachine = new EspressoMachine(CheapConfiguration)
+    val cheapMachine = new EspressoMachine()(CheapConfiguration)
     println(cheapMachine.makeCoffee)
   }
 
@@ -21,7 +21,7 @@ object DeluxeConfiguration extends NewBindingModule(module => {
 
   bind[WaterHeater] toSingle new FastWaterHeater
   bind[Grinder] toProvider { getGrinder() }
-  bind[Foamer] to newInstanceOf [AutomaticFoamer]
+  bind[Foamer] to newInstanceOf[AutomaticFoamer]
 
   def getGrinder(): Grinder = new FineGrinder
 
