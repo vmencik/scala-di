@@ -27,7 +27,7 @@ This project shows the use of the [Spring Framework](http://www.springsource.org
 
 The it is quite similar to the `scala-cdi` project but it can be run directly from SBT using the Jetty plugin by
 running sbt console and invoking `container:start`. The `CoffeeServlet` then can be accessed at
-`http://host:port/coffee`. You stop the embedded Jetty container by invoking `container:start`.
+[localhost:8080/coffee](http://localhost:8080/coffee). You stop the embedded Jetty container by invoking `container:start`.
 
 scala-spring-functional
 -----------------------
@@ -37,7 +37,7 @@ It is almost exactly the same as `scala-spring` but it uses the functional confi
 [Spring Scala](https://github.com/SpringSource/spring-scala) project.
 
 It can be run directly from SBT using the Jetty plugin by running sbt console and invoking `container:start`.
-The `CoffeeServlet` then can be accessed at `http://host:port/coffee`.
+The `CoffeeServlet` then can be accessed at [localhost:8080/coffee](http://localhost:8080/coffee).
 You stop the embedded Jetty container by invoking `container:start`.
 
 subcut
